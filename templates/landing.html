@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="landing-container">
+    <h1>Welcome to Todo App</h1>
+    <p>Organize your tasks efficiently</p>
+    
+    <div class="auth-buttons">
+        <a href="{{ url_for('login') }}" class="btn">Login</a> <p>or</p>
+        <a href="{{ url_for('register') }}" class="btn">Register</a>
+    </div>
+</div>
+{% endblock %} 
